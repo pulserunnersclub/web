@@ -1,0 +1,14 @@
+// ---- FUNCIONES ---- //
+font-zise= Tamaño de letra
+font-weight: bold = grosura de la letra
+font-style = le da decoracion a la letra (ej:italic inclina las letras o oblique que no lo inclina tanto)
+text-aling = alinear texto dentro de un contenedor a diferentes lados segun el atributo escrito
+text-decoration = colocar decoracion al texto segun el atributo escrito
+line-height = esopaciado entre renglones(se coloca con numeros el espaciado)
+text-tranform = poner el texto en minuscula o en mayuscula sin nesesidad de cambiarlo en html
+
+// --- SELECTORES --- //
+Para escojer una clase en especifico dentro de una funcion se usa el . y depsues el
+nombre de la clase
+(ej: <li class="clase">) en css se pone .clase para seleccionar esa clase en especifico y no todos lo li
+# con la almoadilla de puede seleccionar objetos identificados con id y es unico el nombre
