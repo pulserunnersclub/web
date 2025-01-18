@@ -1,0 +1,149 @@
+/* Reset de márgenes y rellenos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general para el body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    flex-direction: column;
+    padding: 20px; /* Espaciado adicional en dispositivos pequeños */
+}
+
+/* Contenedor principal donde se muestra la información del usuario */
+.usuario_Info {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    width: 100%;
+    max-width: 500px; 
+    height: 450px;/* Establecer un ancho máximo para que no se estire demasiado */
+}
+
+/* Imagen del usuario */
+.usuario_Info img {
+    width: 120px; /* Ajustar el tamaño de la imagen */
+    height: 120px; /* Mantener el aspecto cuadrado */
+    border-radius: 50%; /* Hacer la imagen circular */
+    margin-bottom: 15px; /* Separar imagen del texto */
+}
+
+/* Estilo del correo electrónico del usuario */
+#correo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Separación entre el correo y los botones */
+    color: #333;
+}
+
+/* Contenedor para los botones */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Coloca los botones en columna */
+    align-items: center; /* Centra los botones horizontalmente */
+    justify-content: center; /* Centra los botones verticalmente */
+    gap: 15px; /* Espaciado uniforme entre los botones */
+    width: 100%;
+}
+
+/* Estilo para los botones */
+button {
+    background-color: #D897DE;
+    gap: 50px;
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Tamaño del botón */
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Botones ocupan el ancho del contenedor */
+    max-width: 250px; /* Asegura que no se estiren demasiado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para botones */
+    text-align: center; /* Alinea el texto dentro del botón */
+}
+#cerrarSesionBtn{
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #D897DE; /* Cambio de color en hover */
+}
+
+/* Enlace de "Ir al menú" */
+.inicio_hipervinculo a {
+    text-decoration: none;
+    width: 100%;
+}
+
+/* Estilo del hr (línea horizontal) */
+hr {
+    border: 1px solid #ccc;
+    margin-bottom: 20px; /* Separación entre el correo y los botones */
+}
+
+/* Estilos para pantallas pequeñas (celulares y tablets) */
+@media (max-width: 768px) {
+    .usuario_Info {
+        padding: 15px; /* Menos relleno en pantallas pequeñas */
+        width: 90%; /* Usar el 90% del ancho disponible */
+        max-width: 350px; /* Ajustar el ancho máximo para pantallas más pequeñas */
+    }
+
+    /* Ajustar la imagen del usuario */
+    .usuario_Info img {
+        width: 100px; /* Reducir el tamaño de la imagen en dispositivos móviles */
+        height: 100px;
+    }
+
+    /* Ajustar el tamaño de la fuente para el correo */
+    #correo {
+        font-size: 16px; /* Reducir tamaño de la fuente para pantallas pequeñas */
+    }
+
+    /* Ajustar los botones */
+    button {
+        font-size: 14px; /* Reducir el tamaño de los botones en móviles */
+        padding: 10px 18px; /* Reducir el padding */
+    }
+}
+
+/* Estilos para pantallas muy pequeñas (celulares de pantalla más chica) */
+@media (max-width: 480px) {
+    .usuario_Info {
+        width: 100%; /* Asegurarse de que ocupe todo el ancho en dispositivos muy pequeños */
+        max-width: 100%; /* El ancho máximo será el 100% */
+    }
+
+    /* Ajustar imagen aún más en celulares pequeños */
+    .usuario_Info img {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Ajustar el tamaño del correo */
+    #correo {
+        font-size: 14px; /* Reducir aún más el tamaño de la fuente */
+    }
+
+    /* Reducir tamaño de botones */
+    button {
+        font-size: 12px;
+        padding: 8px 16px; /* Ajustar padding */
+    }
+    #cerrarSesionBtn{
+        position: relative;
+        left: 50px;
+
+    }
+}
